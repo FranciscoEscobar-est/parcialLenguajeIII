@@ -1,0 +1,42 @@
+body {
+    background: #f4f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#titulo {
+    color: #242092;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="button"], button {
+    background: #242092;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+input[type="button"]:hover, button:hover {
+    background: #1c14a1;
+}
+
+#respuestasPrompt, #preguntasProgresivas {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 2px 8px rgba(15, 12, 85, 0.08);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}

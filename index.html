@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <!-- Registro normal-->
+    <h1 id="titulo">Registro de usuario</h1>
+    <input type="text" id="nombre" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Solo letras" required placeholder="Nombre">
+    <p></p>
+    <input type="text" id="apellido" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Solo letras" required placeholder="Apellido">
+    <p></p>
+    <input type="text" id="dni" pattern="^\d{8}$" maxlength="8" minlength="8" title="Debe tener 8 números" required placeholder="DNI">
+    <p></p>
+    <input type="date" id="fechaDeNacimiento" min="2007-01-01" required>
+    <p></p>
+    <input type="email" id="email" required placeholder="Email">
+    <p></p>
+    <input type="button" id="btnProgresivo" value="Enviar">
+    <br><br>
+    <button id="btnPreguntas">Responder 3 preguntas</button>
+    <div id="respuestasPrompt"></div>
+    <!-- Preguntas progresivas -->
+    <div id="preguntasProgresivas"></div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
